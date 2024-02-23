@@ -1,41 +1,39 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>Happy Birthday!</title>
-
-  <link rel="stylesheet" href="styles/flexbox-center-container.css" media="all">
-  <link rel="stylesheet" href="styles/system-fonts.css" media="all">
-  <link rel="stylesheet" href="styles/style.css" media="all">
-</head>
-
-<body>
-  <canvas id=c></canvas>
-  <canvas id="confetti"></canvas>
-  <div class="container" id="count">
-    <h1 id="head">Countdown to your birthday:</h1>
-    <ul>
-      <li><span id="day"></span>days</li>
-      <li><span id="hour"></span>hours</li>
-      <li><span id="minute"></span>minutes</li>
-      <li><span id="second"></span>seconds</li>
-    </ul>
-  </div>
-  <div id="merrywrap" class="merrywrap">
-    <canvas id="snowfall"></canvas>
-    <div class="giftbox">
-      <div class="cover">
-        <div></div>
-      </div>
-      <div class="box"></div>
-    </div>
-    <audio controls>
-      <source src="audio/Happy Birthday (Korean Version).mp3" type="audio/mpeg"/> 
-    </audio>
-</body>
-<script src="scripts/confetti.min.js" charset="utf-8"></script>
-<script src="scripts/index.js" charset="utf-8"></script>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="index.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <title>Virtual Card For You!</title>
+    </head>
+    <body>
+        <div class="envelope-wrapper">
+            <div id="envelope" class="close">
+                <div class="front flap"></div>
+                <div class="front pocket"></div>
+                <div class="letter">
+                    <p class="words line1">Annyeong,Soundouss</p>
+                    <p class="words line2">Happy birthday li ajmal fatat f denia, allah ihfedk ou itawal f 3mrk ou nchoufok dima farhana ou ma3aztk f9albi kbiiira💛💛💛</p>
+                    <p class="words line3">I Love YOu❤️, Saranghaeo❤️, Wo Ai Ni❤️</p>
+                    <p class="words line4">Meryem</p>
+                </div>
+                <div class="hearts">
+                    <div class="heart a1"></div>
+                    <div class="heart a2"></div>
+                    <div class="heart a3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="reset">
+            <button id="open">Open</button>
+            <button id="reset">Reset</button>
+        </div>
+        <audio controls>
+            <source src="audio/darling svt.MP3" type="audio/mpeg"/> 
+          </audio>
+        <h1 class="valentine">HAPPY 18 BIRTHDAY TO YOUU!💓💓 
+        </h1>
+        <script src="index.js"></script>
+    </body>
 </html>
